@@ -1,0 +1,26 @@
+<marquee><h1>Welcome to Ticket Booking Reservation System</h1></marquee>
+
+<input
+  type="number"
+  [(ngModel)]="number"
+  placeholder="Number of seats to reserve"
+/>
+
+<button (click)="onSubmit()">Reserve seats</button>
+<br>
+
+<b>Seat availability in train coach</b>
+
+<ul>
+  <li *ngFor="let seat of seats">
+    <span
+      [ngClass]="{
+        available: seat,
+        reserved: !seat
+      }"
+    >
+      {{ seat ? 'O' : 'X' }}
+    </span>
+  </li>
+</ul>
+

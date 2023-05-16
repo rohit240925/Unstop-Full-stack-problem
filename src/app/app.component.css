@@ -1,0 +1,39 @@
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+input {
+  width: 100px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  background-color: rgba(7, 241, 194, 0.381);
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+
+  width: 12%;
+  height: 100px;
+  border: 1px solid rgb(9, 9, 10);
+  background-color: white;
+  margin: 5px;
+  box-align: center;
+  text-align: center;
+}
+
+.available {
+  background-color: rgb(9, 232, 139);
+}
+
+.reserved {
+  background-color: rgb(241, 19, 19);
+}
